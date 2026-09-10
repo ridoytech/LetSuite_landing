@@ -107,8 +107,8 @@ export default function LandingPage() {
       {/* Floating Glass Navbar */}
       <div className="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4">
         <nav className="bg-white/90 md:bg-white/30 backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_rgb(0,0,0,0.08)] rounded-full px-5 md:px-6 py-3 flex items-center justify-between w-full max-w-6xl relative z-50">
-          <div className="flex items-center gap-2">
-            <img src="/Let Suite-Photoroom.png" alt="Let Suite" className="h-8 md:h-10 w-auto object-contain" />
+          <div className="flex items-center gap-2 -my-4">
+            <img src="/Let Suite-Photoroom.png" alt="Let Suite" className="h-12 md:h-16 w-auto object-contain origin-left scale-110" />
           </div>
           
           <div className="hidden lg:flex items-center space-x-6">
@@ -306,7 +306,7 @@ export default function LandingPage() {
             {advantages.map((adv, i) => {
               const Icon = adv.icon;
               return (
-                <div key={i} className="group relative bg-white rounded-3xl p-8 border border-slate-200/60 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300 overflow-hidden">
+                <div key={i} className="group relative bg-white rounded-3xl p-8 border border-slate-200/60 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden">
                   {/* Premium top gradient line on hover */}
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
@@ -474,7 +474,7 @@ export default function LandingPage() {
             {modules.map((mod, idx) => {
               const Icon = mod.icon;
               return (
-                <div key={idx} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200/50 shadow-lg shadow-slate-200/40 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 transition-all duration-300 cursor-pointer overflow-hidden">
+                <div key={idx} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-lg shadow-slate-200/40 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer overflow-hidden hover:border-primary/30">
                   {/* Hover background subtle gradient */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
@@ -613,7 +613,7 @@ export default function LandingPage() {
               {portals.map((portal, idx) => {
                 const Icon = portal.icon;
                 return (
-                  <div key={idx} className="group bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-primary/10 hover:border-primary/20 transition-all duration-300 flex items-start gap-6 cursor-default hover:-translate-x-2">
+                  <div key={idx} className="group bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary/20 transition-all duration-300 flex items-start gap-6 cursor-default hover:-translate-x-2">
                     <div className="w-16 h-16 shrink-0 bg-slate-50 border border-slate-100 shadow-inner rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white group-hover:scale-110 transition-all duration-300">
                       <Icon className="w-7 h-7" />
                     </div>
@@ -832,8 +832,8 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-12 gap-12 lg:gap-8 mb-16">
             <div className="md:col-span-5 lg:col-span-4">
-              <div className="inline-flex items-center gap-2 mb-8 bg-white px-4 py-3 rounded-2xl shadow-sm border border-slate-100">
-                <img src="/Let Suite-Photoroom.png" alt="Let Suite Logo" className="h-8 object-contain" />
+              <div className="inline-flex items-center gap-2 mb-8 bg-white px-6 py-4 rounded-3xl shadow-sm border border-slate-100">
+                <img src="/Let Suite-Photoroom.png" alt="Let Suite Logo" className="h-16 md:h-20 w-auto object-contain scale-110 origin-left" />
               </div>
               <p className="text-slate-500 font-medium leading-relaxed mb-8 pr-4">
                 The complete feature set for a production-ready lettings management system. Built for agencies, landlords, and tenants.
